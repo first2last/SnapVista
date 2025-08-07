@@ -80,3 +80,30 @@ Make sure you have the following installed:
 git clone https://github.com/first2last/SnapVista.git
 cd SnapVista
 npm install
+
+🛠️ Environment Variables
+Create a .env file in the root directory and add the following:
+
+env
+Copy
+Edit
+VITE_APPWRITE_URL=
+VITE_APPWRITE_PROJECT_ID=
+VITE_APPWRITE_DATABASE_ID=
+VITE_APPWRITE_STORAGE_ID=
+VITE_APPWRITE_USER_COLLECTION_ID=
+VITE_APPWRITE_POST_COLLECTION_ID=
+VITE_APPWRITE_SAVES_COLLECTION_ID=
+Replace the values above with your actual credentials from your Appwrite project dashboard.
+
+▶️ Running the Project
+bash
+Copy
+Edit
+npm start
+Visit http://localhost:3000 in your browser to view the app.
+
+Made with ❤️ by Vishesh Mishra
+
+
+
