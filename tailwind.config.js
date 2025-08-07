@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   darkMode: ['class'],
@@ -15,14 +15,22 @@ module.exports = {
       padding: '2rem',
       screens: {
         '2xl': '1400px',
-      
       },
     },
     extend: {
       colors: {
-        'primary-500': '#877EFF',
-        'primary-600': '#5D5FEF',
+        // 🌌 Glowing Blue Theme Colors (Your Custom Palette)
+        primary: '#00aeff',
+        primaryLight: '#33F6FF',
+        primaryDark: '#00C2CC',
+        background: '#040014',
+
+        // Optional: override the original theme names
+        'primary-500': '#00aeff',
+        'primary-600': '#00C2CC',
         'secondary-500': '#FFB620',
+
+        // Neutral & utility colors (unchanged)
         'off-white': '#D0DFFF',
         'red': '#FF5A5A',
         'dark-1': '#000000',
@@ -35,16 +43,14 @@ module.exports = {
         'light-4': '#5C5C7B',
       },
       screens: {
-        'xs': '480px',
-      
+        xs: '480px',
       },
       width: {
-        '420': '420px',
-        '465': '465px',
+        420: '420px',
+        465: '465px',
       },
       fontFamily: {
-        inter: ['Inter', 'sans-serif'],
-
+        inter: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
         'accordion-down': {
